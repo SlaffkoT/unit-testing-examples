@@ -6,8 +6,17 @@ enable_testing()
 include(${CMAKE_CURRENT_BINARY_DIR}/conanbuildinfo.cmake)
 conan_basic_setup(TARGETS)
 
-#add_executable(qqq qqq.cpp)
-
-#target_link_libraries(qqq CONAN_PKG::benchmark )
+add_compile_options(-Wall
+                    -Wextra
+                    -Wshadow
+                    -Wnon-virtual-dtor
+                    -Wold-style-cast
+                    -Wcast-align
+                    -Wunused
+                    -Woverloaded-virtual
+                    -Wconversion
+                    -fstack-protector-strong)
 
 add_subdirectory(stage_1)
+add_subdirectory(stage_2)
+add_subdirectory(stage_3)

@@ -1,0 +1,9 @@
+BasedOnStyle: Mozilla
+AccessModifierOffset: -4
+ConstructorInitializerIndentWidth: 4
+IndentWidth: 4
+TabWidth: 4
+FixNamespaceComments: true
+Cpp11BracedListStyle: true
+ColumnLimit: 120
+AlwaysBreakAfterReturnType: None

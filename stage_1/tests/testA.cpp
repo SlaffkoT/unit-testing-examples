@@ -3,7 +3,8 @@
 #include <stage_1/A.h>
 #include <stage_1/ParamClass.h>
 
-TEST(A, xxx) {
+TEST(A, ShouldReturnProperly)
+{
     A a;
     ParamClass p;
 
